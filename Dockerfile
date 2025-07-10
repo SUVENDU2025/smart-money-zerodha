@@ -6,4 +6,5 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "smart_money_bot.py"]
+CMD ["python", "main.py"]
+
