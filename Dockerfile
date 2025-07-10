@@ -1,10 +1,9 @@
-FROM python:3.11-slim
+FROM python:3.11
 
 WORKDIR /app
 
-COPY . .
+COPY . /app
 
-RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["python", "main.py"]
+CMD ["python", "smart_money_bot.py"]
